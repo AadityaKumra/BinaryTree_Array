@@ -15,5 +15,7 @@ class Main {
     bt.inOrder(1);
     System.out.println();
     bt.postOrder(1);
+    System.out.println();
+    bt.leverOrder();
   }
 }
