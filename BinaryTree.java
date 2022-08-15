@@ -23,4 +23,31 @@ public class BinaryTree{
     }
     else{System.out.println("BT already full.");}
   }
+
+  public void preOrder(int index){
+    if(index>lastUsedIndex){
+      return;
+    }
+    System.out.print(arr[index]+" ");
+    preOrder(2*index); //O(n/2)
+    preOrder(2*index+1); //O(n/2)
+  }
+
+  public void inOrder(int index){
+    if(index>lastUsedIndex){
+      return;
+    }
+    inOrder(index*2);
+    System.out.print(arr[index]+" ");
+    inOrder(index*2+1);
+  }
+
+  public void postOrder(int index){
+    if(index>lastUsedIndex){
+      return;
+    }
+    postOrder(index*2);
+    postOrder(index*2+1);
+    System.out.print(arr[index]+" ");
+  }
 }
