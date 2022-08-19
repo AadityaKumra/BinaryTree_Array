@@ -17,5 +17,7 @@ class Main {
     bt.postOrder(1);
     System.out.println();
     bt.leverOrder();
+
+    bt.search("N10");
   }
 }

@@ -55,5 +55,19 @@ public class BinaryTree{
     for(int i=1;i<lastUsedIndex+1;i++){
       System.out.print(arr[i]+" ");
     }
+    System.out.println();
   }
+
+  public boolean search(String val){
+    for(int i=0;i<arr.length;i++){
+      if(arr[i]==val){
+        System.out.println(val+" found at "+i+"th node.");
+        return true;
+      }
+    }
+    System.out.println("Value not present in BT.");
+    return false;
+  }
+
+  
 }
